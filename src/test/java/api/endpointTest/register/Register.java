@@ -1,8 +1,8 @@
 package api.endpointTest.register;
 
-import api.utils.CleanUtils;
 import api.dto.RegisterDTO;
 import api.endpointTest.BaseApi;
+import api.utils.CleanUtils;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.testng.annotations.AfterMethod;
@@ -13,7 +13,6 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.AssertJUnit.assertEquals;
-import static org.testng.AssertJUnit.assertNotNull;
 
 public class Register extends BaseApi {
 

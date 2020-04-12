@@ -1,12 +1,9 @@
 package api.endpointTest.login;
 
 import api.dto.LoginDTO;
-import api.dto.UserDTO;
 import api.endpointTest.BaseApi;
 import org.apache.http.HttpStatus;
 import org.testng.annotations.Test;
-//import org.junit.Before;
-//import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
@@ -42,16 +39,4 @@ public class Login extends BaseApi {
                 .assertThat().statusCode(HttpStatus.SC_UNAUTHORIZED);
     }
 
-//    @Test
-//    public void getUserById(){
-//        String id = "5e92d0f8ee11cb000135ca36";
-////        UserDTO user =
-//        String s = given()
-//                .when()//.pathParam("id", id)
-//                .get("customers/5e92d0f8ee11cb000135ca36")
-//                .body().prettyPrint();
-////                .as(UserDTO.class);
-//
-//        System.out.println(s);
-//    }
 }
